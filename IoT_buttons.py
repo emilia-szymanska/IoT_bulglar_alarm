@@ -64,7 +64,7 @@ while True:
         client.publish('best/reset', 'True')
         ledAlarm.off()
         sleep(0.5)
-    if button2.value()==1 ledAlarm.value()==0:
+    if button2.value()==1 and ledAlarm.value()==0:
         print('changeStateAlarm')
         client.publish('best/set', 'True')
         sleep(0.5)
